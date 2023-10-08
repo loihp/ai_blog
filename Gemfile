@@ -74,7 +74,13 @@ group :test do
 
 end
 
+gem 'capistrano', '~> 3.14', require: false
+gem 'capistrano-rails', '~> 1.6', require: false
+gem 'capistrano-bundler', require: false
+gem 'capistrano-rbenv', '~> 2.1', require: false  # If you are using rbenv
+
 gem "devise", "~> 4.9"
 gem 'pry', '~> 0.14.2'
 gem 'hotwire-livereload'
 gem 'faker'
+gem "pagy"
